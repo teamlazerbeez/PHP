@@ -1,5 +1,5 @@
-Team Lazer Beez Libraries
-Copyright 2010-2012 Team Lazer Beez
+# Team Lazer Beez Libraries
+Copyright 2010-2012 Team Lazer Beez  
 http://teamlazerbeez.com
 
 ## What is it?
