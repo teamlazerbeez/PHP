@@ -8,8 +8,9 @@ Team Lazer Beez Libraries are a collection of code used at one time
 by Genius.com and released by the Team Lazer Beez.
 
 The current features of the PHP library are:
-  - Output encoding functions for protecting against XSS and similar attacks (http://blog.teamlazerbeez.com/?p=2437)
-   - Wrappers for PHP's PCRE library to report all errors as exceptions (http://blog.teamlazerbeez.com/?p=2569)
+
+* Output encoding functions for protecting against XSS and similar attacks (http://blog.teamlazerbeez.com/?p=2437)
+* Wrappers for PHP's PCRE library to report all errors as exceptions (http://blog.teamlazerbeez.com/?p=2569)
 
 ## Using Team Lazer Beez Libraries
 
