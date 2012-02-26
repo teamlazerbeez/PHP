@@ -1,0 +1,7 @@
+Team Lazer Beez Libraries
+Copyright 2010 Team Lazer Beez
+http://teamlazerbeez.com
+
+The gosRegex package provides wrappers for PHP's built-in PCRE functions
+(preg_match(), etc.) which automatically check preg_last_error() and throw
+gosException_RegularExpression if the PCRE function had any error.

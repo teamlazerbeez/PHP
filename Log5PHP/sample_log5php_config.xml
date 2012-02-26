@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<configuration
+  threshold="all"
+  debug="false">
+
+  <!-- write to the console (stdout) -->
+  <appender
+    name="console"
+    class="Log5PHP_Appender_Console">
+    <layout class="Log5PHP_Layout_Simple" />
+  </appender>
+
+  <!-- write to a file that's rotated every 100 bytes -->
+  <appender
+    name="rolling_file"
+    class="Log5PHP_Appender_RollingFile">
+    <param
+      name="fileName"
+      value="test_Log5PHP_Appender_RollingFile.txt" />
+    <param
+      name="maxFileSize"
+      value="100" />
+    <param
+      name="maxBackupIndex"
+      value="3" />
+    <layout class="Log5PHP_Layout_TTCC" />
+  </appender>
+
+  <!-- log to a file that's rotated once a day -->
+  <appender
+    name="daily_file"
+    class="Log5PHP_Appender_DailyFile">
+    <layout class="Log5PHP_Layout_TTCC" />
+    <param
+      name="fileName"
+      value="test_DailyFile.txt" />
+  </appender>
+
+  <!-- use php's echo to write log events -->
+  <appender
+    name="echo"
+    class="Log5PHP_Appender_Echo">
+    <layout class="Log5PHP_Layout_Pattern">
+      <param
+        name="conversionPattern"
+        value="ECHO %r [%t] %p %c %x - %m%n" />
+    </layout>
+  </appender>
+
+  <!-- black hole -->
+  <appender
+    name="null"
+    class="Log5PHP_Appender_Null">
+  </appender>
+
+  <!-- aggregate events until shutdown, then send all the events in one mail -->
+  <appender
+    name="mail"
+    class="Log5PHP_Appender_Mail">
+    <layout class="Log5PHP_Layout_TTCC" />
+    <param
+      name="from"
+      value="log5php-mail@noreply.com" />
+    <param
+      name="to"
+      value="mpierce@genius.com" />
+    <param
+      name="subject"
+      value="log5php report" />
+  </appender>
+
+  <!-- mail events one at a time, as they happen -->
+  <appender
+    name="mailEvent"
+    class="Log5PHP_Appender_MailEvent">
+    <layout class="Log5PHP_Layout_TTCC" />
+    <param
+      name="from"
+      value="log5php-mailevent@noreply.com" />
+    <param
+      name="to"
+      value="mpierce@genius.com" />
+    <param
+      name="subject"
+      value="log5php event" />
+    <param
+      name="smtpHost"
+      value="localhost" />
+  </appender>
+
+  <!-- xml formatted events sent over a tcp socket -->
+  <appender
+    name="socket"
+    class="Log5PHP_Appender_Socket">
+    <layout class="Log5PHP_Layout_BuzzsawXML" />
+    <param
+      name="remoteHost"
+      value="192.168.0.1" />
+    <param
+      name="port"
+      value="51400" />
+  </appender>
+
+  <!--
+    <appender name="syslog" class="Log5PHP_Appender_Syslog">
+    </appender>
+  -->
+
+  <root>
+    <level value="all" />
+    <appender_ref ref="console" />
+    <appender_ref ref="rolling_file" />
+    <appender_ref ref="daily_file" />
+    <appender_ref ref="echo" />
+    <appender_ref ref="null" />
+    <appender_ref ref="mailEvent" />
+    <appender_ref ref="mail" />
+    <appender_ref ref="socket" />
+  </root>
+</configuration>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration threshold="ALL">
+  <appender name="otherAppender">
+    <layout class="name_of_layout_class">
+      <param name="optionN" value="valueN"/>
+      <param name="option1" value="value1"/>
+    </layout>
+    <param name="fooKey" value="fooVal"/>
+  </appender>
+  <appender class="Log5PHP_Appender_Socket" name="default">
+    <param name="port" value="4446"/>
+    <param name="useXml" value="false"/>
+    <param name="remoteHost" value="tcp://192.168.10.95"/>
+  </appender>
+  <root>
+    <level value="INFO"/>
+    <appender_ref ref="default"/>
+  </root>
+  <logger name="logger_name">
+    <level value="LEVEL"/>
+    <appender_ref ref="app1"/>
+    <appender_ref ref="app2"/>
+  </logger>
+</configuration>

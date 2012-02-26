@@ -1,0 +1,14 @@
+<event>
+  <logger>testLogger</logger>
+  <message>msg</message>
+  <level>DEBUG</level>
+  <thread></thread>
+  <process>REPLACED</process>
+  <hostname>REPLACED</hostname>
+  <timestamp>REPLACED</timestamp>
+  <location>
+    <fileName>REPLACED</fileName>
+    <lineNumber>42</lineNumber>
+    <method>testOutput</method>
+  </location>
+</event>

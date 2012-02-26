@@ -1,0 +1,12 @@
+2011-01-23  v1.3
+- Added gosUtility_Parallel providing basic parent/worker relationships
+
+2010-11-02  v1.2
+- Moved PHP code to php/ directory in preparation of releasing other code
+- Created new top level projects: DB, Fixture, Log5PHP, Safe
+- Added gosUtility_Config_Reader for handling simple YAML configuration files
+- Made escaping in gosSanitizer more thorough
+
+2010-08-30  v1.1
+- Changed the prefix form "sg" to "gos" for isolation within Genius.com's internal codebase.
+- Created the new Regex module of PCRE wrapper functions that check preg_last_error().

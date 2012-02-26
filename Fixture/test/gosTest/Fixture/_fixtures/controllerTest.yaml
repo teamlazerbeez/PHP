@@ -1,0 +1,10 @@
+f:
+    fixture_test:
+        i1: 7
+        s1: foobar
+
+    ut_active_records:
+        id: <<auto>>
+        int_not_allow_null: 7
+        string_not_allow_null: foobar
+        enum_not_null: foo

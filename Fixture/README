@@ -1,0 +1,7 @@
+Team Lazer Beez Libraries
+Copyright 2010 Team Lazer Beez
+http://teamlazerbeez.com
+
+The gosFixture package provides database fixture functionality for testing
+database backed applications, allowing data to be injected into the DB, to
+allow more isolated testing.

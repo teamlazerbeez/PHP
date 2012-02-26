@@ -1,0 +1,14 @@
+Team Lazer Beez Libraries
+Copyright 2010 Team Lazer Beez
+http://teamlazerbeez.com
+
+The gosUtility package provides classes useful for manipulating strings,
+reading YAML files, correctly working with URLs, and parent/child parallel
+processing.
+
+
+CONFIGURATION
+
+The application root (site root for your website) needs to be set in
+gosUtility_URLBuilder (lib/gosUtility/URLBuilder.cls.php)  This is used to
+assemble absolute URLs including that root address.

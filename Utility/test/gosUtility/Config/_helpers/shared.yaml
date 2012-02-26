@@ -1,0 +1,11 @@
+nested:
+    - thing
+    - thing2
+    - other thing
+    - last thing:
+        - subentry
+        - another one
+
+a_large_number: 1000
+
+db_adaptor_classname: sgDatabase_Mysqli

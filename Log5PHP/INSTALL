@@ -1,0 +1,24 @@
+PHP 5.2.1+ is required for Log5PHP.
+
+To use Log5PHP, you need to define a few constants.
+
+LOG5PHP_CONFIGURATION - location of your xml config file (uses log4j's xml format)
+LOG5PHP_LINE_SEP - usually "\n"
+LOG5PHP_DIR - path to log4php's src/main/php directory
+
+You then need to load the autoload function:
+
+require_once LOG5PHP_DIR . '/autoload.inc.php';
+spl_autoload_register('Log5PHP_autoload');
+
+You're ready to go! Try it out with the root logger -- see below. 
+You should shutdown the manager if possible, but it is *mandatory* for appenders
+that require shutdown to finish their work, like the Mail appender. Most appenders
+do not require an explicit shutdown in order to work -- closing sockets, etc gets
+handled by the OS when the process exits.
+
+$logger = Log5PHP_Manager::getRootLogger();
+
+$logger->fatal('Something died');
+
+Log5PHP_Manager::shutdown();

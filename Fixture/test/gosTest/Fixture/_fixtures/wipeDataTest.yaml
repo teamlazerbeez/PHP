@@ -1,0 +1,6 @@
+conflictingRow:
+    ut_active_records:
+        id: 700
+        int_not_allow_null: 7
+        string_not_allow_null: foobar
+        enum_not_null: foo

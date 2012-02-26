@@ -1,0 +1,6 @@
+Team Lazer Beez Libraries
+Copyright 2010 Team Lazer Beez
+http://teamlazerbeez.com
+
+The gosSafe package is an object class for creating text that can be safely
+encoded for different contexts.

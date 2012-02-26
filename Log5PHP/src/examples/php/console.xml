@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <appender class="Log5PHP_Appender_Console" name="console">
+    <layout class="Log5PHP_Layout_Pattern">
+        <param name="conversionPattern" value="%d{ISO8601} %p %c %x - %m%n"/>
+    </layout>
+    <param name="target" value="STDOUT"/>
+  </appender>
+  <root>
+    <level value="DEBUG"/>
+    <appender_ref ref="console"/>
+  </root>
+</configuration>

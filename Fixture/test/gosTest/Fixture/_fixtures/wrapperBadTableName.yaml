@@ -1,0 +1,3 @@
+badTableName:
+    bad/table: # has slash
+        i1: 7

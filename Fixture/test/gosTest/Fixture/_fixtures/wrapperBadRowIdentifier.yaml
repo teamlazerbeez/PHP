@@ -1,0 +1,4 @@
+badRowIdentifier:
+    fixture_test:
+        row/Identifier: # has slash
+            i1: 7

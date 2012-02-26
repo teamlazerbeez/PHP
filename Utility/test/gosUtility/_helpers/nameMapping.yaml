@@ -1,0 +1,6 @@
+dataType:
+  string: Text
+  number: Number
+  date: Date
+  datetime: Date-time
+  boolean: Checkbox

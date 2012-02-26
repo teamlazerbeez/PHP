@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<configuration
+    threshold="all"
+    debug="false">
+
+
+    <!-- write to the console (stdout) -->
+    <appender
+        name="console"
+        class="Log5PHP_Appender_Console">
+        <layout class="Log5PHP_Layout_Simple" />
+    </appender>
+
+    <root>
+        <level value="all" />
+        <appender_ref ref="console" />
+    </root>
+</configuration>

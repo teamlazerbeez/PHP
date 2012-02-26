@@ -1,0 +1,32 @@
+Log5PHP is an improved version of Log4PHP.
+
+The original Log4PHP was written by Marco Vassura <vxr@vxr.it> and released under the LGPL.
+
+Unit tests and other minor enhancements were contributed by Knut Urdalen <knut@php.no>
+and released under the Apache License 2.0.
+
+Reorganization, removal of PHP4 cruft and other modernizations, more unit tests 
+and other things by Marshall Pierce <marshall@genius.com>. These changes are 
+released under the Apache License 2.0.
+
+No doubt there were other contributors as well -- if your name should be on this list,
+please let me know at <marshall@genius.com>.
+
+Names I've seen in @author tags in the code, in no particular order:
+Abel Gonzalez <agonzalez@lpsz.org> (Daily file appender)
+Sergio Strampelli <sergio@ascia.net> (Base appender)
+Domenico Lordi <lordi@interfree.it> (MailEvent appender)
+
+Major changes since 0.9 and the minor Apache releases since then:
+- Reorg for autoloading
+- Reformatting
+- Removal of the Property configurator -- use XML configuration. It's the Right Way to do it.
+  There's a little ruby script to turn your .properties file into an .xml file in util/ruby/phpini2xml/phpini2xml.rb.
+  Call it with your .properties file as the only argument and it'll spit out a .xml file that should match your .properties config.
+- Remove the pointless namespacing of the XML elements in the configuration.
+- Various bug fixes and refactorings
+- Socket appender requires a layout
+- Env variable for overriding default init is now log4php_defaultInitOverride
+- Env var for setting config file is now log4php_configuration
+- Layout for Buzzsaw's XML format
+- Removed the "class" attribute from the <logger> xml configuration element since it made no sense

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <appender class="Log5PHP_Appender_File" name="default">
+    <layout class="Log5PHP_Layout_TTCC"/>
+    <param name="file" value="tmp/file.log"/>
+  </appender>
+  <root>
+    <level value="DEBUG"/>
+    <appender_ref ref="default"/>
+  </root>
+</configuration>

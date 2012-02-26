@@ -1,0 +1,4 @@
+- Example for DB
+- Example for Safe
+- Handle failures of posix_kill() in gosUtility_Parallel
+    (see: http://us.php.net/posix_kill)

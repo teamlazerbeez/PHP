@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <appender class="Log5PHP_Appender_Syslog" name="default">
+    <layout class="Log5PHP_Layout_Simple"/>
+    <param name="facility" value="LOG_LOCAL0"/>
+    <param name="ident" value="log5php-test"/>
+  </appender>
+  <root>
+    <level value="DEBUG"/>
+    <appender_ref ref="default"/>
+  </root>
+</configuration>

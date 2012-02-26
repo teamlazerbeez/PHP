@@ -1,0 +1,4 @@
+badColName:
+    fixture_test:
+        i1: 7
+        col/Name: val # has slash

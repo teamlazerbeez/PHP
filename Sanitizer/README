@@ -1,0 +1,7 @@
+Team Lazer Beez Libraries
+Copyright 2010 Team Lazer Beez
+http://teamlazerbeez.com
+
+The gosSanitizer package provides static functions useful for sanitizing
+user provided text.  Used properly, these can help mitigate the risk of
+cross-site scripting (XSS) and SQL Injection.

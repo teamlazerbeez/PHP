@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <appender class="Log5PHP_Appender_DailyFile" name="default">
+    <layout class="Log5PHP_Layout_TTCC"/>
+    <param name="datePattern" value="Ymd"/>
+    <param name="file" value="tmp/daily_%s.log"/>
+  </appender>
+  <root>
+    <level value="DEBUG"/>
+    <appender_ref ref="default"/>
+  </root>
+</configuration>

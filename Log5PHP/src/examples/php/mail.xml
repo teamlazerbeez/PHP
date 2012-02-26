@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <appender class="Log5PHP_Appender_Mail" name="email">
+    <layout class="Log5PHP_Layout_TTCC"/>
+    <param name="from" value="someone@example.com"/>
+    <param name="to" value="changeme@asdfasdfasdfasdf.com"/>
+    <param name="subject" value="Log5php test"/>
+  </appender>
+  <root>
+    <level value="FATAL"/>
+    <appender_ref ref="email"/>
+  </root>
+</configuration>

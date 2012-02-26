@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <appender class="Log5PHP_Appender_Echo" name="default">
+    <layout class="Log5PHP_Layout_Simple"/>
+  </appender>
+  <root>
+    <level value="DEBUG"/>
+    <appender_ref ref="default"/>
+  </root>
+</configuration>

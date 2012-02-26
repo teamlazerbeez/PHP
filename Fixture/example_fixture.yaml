@@ -1,0 +1,11 @@
+# The name of this fixture
+fixtureName:
+    # A table we will insert data into
+    fixture_test:
+        # Named rows are acessible in the fixture object
+        row1:
+            i1: 11
+            s1: str1
+        row2:
+            i1: 21
+            s1: str2

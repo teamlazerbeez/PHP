@@ -1,0 +1,19 @@
+Team Lazer Beez Libraries
+Copyright 2010 Team Lazer Beez
+http://teamlazerbeez.com
+
+This package contains support classes for other Genius Open Source libraries.
+
+
+AUTOLOADER
+
+The Genius Open Source packages are automatically loaded with a an __autoload()
+implementation, gosAutoload() in gosConfig.inc.php.  The easiest way to use the
+packages is to include gosConfig.inc.php, thereby registering the autoload
+function contained therein:
+
+    require_once '/path/to/genius-oss/Core/gosConfig.inc.php';
+
+    // You can now use Genius Open Source classes
+    $url = 'http://foo.com/bar.html';
+    $builder = gosUtility_URLBuilder::createForAbsoluteURL($url);
